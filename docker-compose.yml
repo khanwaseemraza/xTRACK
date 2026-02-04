@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  vision:
+    build: ./services/vision
+    ports: ["8000:8000"]
+    environment:
+      - YOLO_MODEL=yolov8n.pt
+  server:
+    build: ./apps/server
+    ports: ["8787:8787"]
+    depends_on: [vision]

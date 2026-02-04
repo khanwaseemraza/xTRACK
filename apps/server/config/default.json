@@ -1,0 +1,37 @@
+{
+  "cdp": {
+    "host": "127.0.0.1",
+    "port": 9222
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "dpr": 1
+  },
+  "capture": {
+    "fps": 10,
+    "format": "jpeg",
+    "jpegQuality": 65,
+    "downscale": 1.0
+  },
+  "dom": {
+    "maxNodes": 1200,
+    "maxTextLen": 80
+  },
+  "vision": {
+    "url": "http://127.0.0.1:8000/infer"
+  },
+  "server": {
+    "port": 8787
+  },
+  "ws": {
+    "path": "/ws"
+  },
+  "llm": {
+    "baseUrl": "http://localhost:11434/v1",
+    "model": "qwen2.5:7b-instruct",
+    "apiKey": "",
+    "temperature": 0.2,
+    "maxTokens": 600
+  }
+}
